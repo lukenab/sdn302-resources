@@ -1,0 +1,75 @@
+{
+  "tickets": [
+    {
+      "_id": { "$oid": "65c1a2b3c4d5e6f7a8b9c0d1" },
+      "movieTitle": "Spider-Man: No Way Home",
+      "cinema": "CGV Vincom",
+      "showTime": { "$date": "2025-02-22T19:00:00.000Z" },
+      "seatNumber": "B5",
+      "price": 200000,
+      "userId": { "$oid": "65c987654321abcd1234abcd" },
+      "createdAt": { "$date": "2025-02-01T00:00:00.000Z" },
+      "updatedAt": { "$date": "2025-02-01T00:00:00.000Z" }
+    },
+    {
+      "_id": { "$oid": "65c2a2b3c4d5e6f7a8b9c0d2" },
+      "movieTitle": "Avengers: Endgame",
+      "cinema": "Lotte Mart",
+      "showTime": { "$date": "2025-02-23T21:30:00.000Z" },
+      "seatNumber": "C7",
+      "price": 250000,
+      "userId": { "$oid": "65c987654321abcd1234abce" },
+      "createdAt": { "$date": "2025-02-01T00:00:00.000Z" },
+      "updatedAt": { "$date": "2025-02-01T00:00:00.000Z" }
+    },
+    {
+      "_id": { "$oid": "65c3a2b3c4d5e6f7a8b9c0d3" },
+      "movieTitle": "Inception",
+      "cinema": "Galaxy Cinema",
+      "showTime": { "$date": "2025-02-24T18:00:00.000Z" },
+      "seatNumber": "A10",
+      "price": 180000,
+      "userId": { "$oid": "65c987654321abcd1234abcf" },
+      "createdAt": { "$date": "2025-02-01T00:00:00.000Z" },
+      "updatedAt": { "$date": "2025-02-01T00:00:00.000Z" }
+    }
+  ],
+  "users": [
+    {
+      "_id": { "$oid": "65c987654321abcd1234abcd" },
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "0987654321",
+      "tickets": [
+        { "$oid": "65c1a2b3c4d5e6f7a8b9c0d1" }
+      ],
+      "isVIP": false,
+      "createdAt": { "$date": "2025-02-01T00:00:00.000Z" },
+      "updatedAt": { "$date": "2025-02-01T00:00:00.000Z" }
+    },
+    {
+      "_id": { "$oid": "65c987654321abcd1234abce" },
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "0977123456",
+      "tickets": [
+        { "$oid": "65c2a2b3c4d5e6f7a8b9c0d2" }
+      ],
+      "isVIP": false,
+      "createdAt": { "$date": "2025-02-01T00:00:00.000Z" },
+      "updatedAt": { "$date": "2025-02-01T00:00:00.000Z" }
+    },
+    {
+      "_id": { "$oid": "65c987654321abcd1234abcf" },
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "phone": "0963123456",
+      "tickets": [
+        { "$oid": "65c3a2b3c4d5e6f7a8b9c0d3" }
+      ],
+      "isVIP": false,
+      "createdAt": { "$date": "2025-02-01T00:00:00.000Z" },
+      "updatedAt": { "$date": "2025-02-01T00:00:00.000Z" }
+    }
+  ]
+}

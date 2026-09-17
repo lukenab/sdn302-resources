@@ -1,0 +1,21 @@
+{
+  "name": "sdn302-resources",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small runnable demos and exercises for learning SDN302 foundations",
+  "type": "module",
+  "scripts": {
+    "demo:callback": "node topics/01-javascript-async/demos/01-callback.js",
+    "demo:promise": "node topics/01-javascript-async/demos/02-promise.js",
+    "demo:async": "node topics/01-javascript-async/demos/03-async-await.js",
+    "demo:event-loop": "node topics/01-javascript-async/demos/04-event-loop.js",
+    "test:exercise": "node --test --test-isolation=none topics/01-javascript-async/exercise/booking-workflow.test.js",
+    "assignment:dev": "npm --prefix projects/assignment1 run dev",
+    "assignment:start": "npm --prefix projects/assignment1 start",
+    "assignment:seed": "npm --prefix projects/assignment1 run seed",
+    "assignment:test": "npm --prefix projects/assignment1 test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
